@@ -13,7 +13,8 @@ export default async function Home({
   const params = { search: query || null };
 
   const session = await auth();
-  console.log("Sesion iniciada", session?.id);
+
+  console.log("Session:", session?.id);
 
   const { data: posts } = await sanityFetch({ query: STARTUPS_QUERY, params });
   return (
@@ -30,6 +31,7 @@ export default async function Home({
 
         <SearchForm query={query} />
       </section>
+
       <section className="section_container">
         <p className="text-30-semibold">
           {query ? `Search results for "${query}"` : "All Startups"}
