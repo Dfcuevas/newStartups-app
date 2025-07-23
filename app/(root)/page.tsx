@@ -25,7 +25,7 @@ export default async function Home({
         </h1>
 
         <p className="sub-heading !max-w-3xl">
-          Submit ideas, Vote on Pitches, and Get Noticed in Virtual
+          Submit ideas, Vote on pitches, and Get Noticed in Virtual
           Competitions.
         </p>
 
